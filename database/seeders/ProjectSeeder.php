@@ -22,7 +22,7 @@ class projectSeeder extends Seeder
             $new_project->slug = project::generateSlug($new_project->name);
             $new_project->client_name = $faker->sentence(3);
             $new_project->summary = $faker->text();
-            $new_project->cover_image = 'https://encrypted- tbn0.gstatic.com/images?q=tbn:ANd9GcTK8is9TWLTeW3PSVRvNVzsY0-AnY7sBERyu7du5phWmbisTnEIblNUWd0xkvSx23vP_ds&usqp=CAU';
+            $new_project->cover_image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK8is9TWLTeW3PSVRvNVzsY0-AnY7sBERyu7du5phWmbisTnEIblNUWd0xkvSx23vP_ds&usqp=CAU';
             $new_project->save();
         }
     }
