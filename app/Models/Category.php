@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
+
+    //relazione con la tabella projects
+    //"ho tanti projects"
+    public function projects(){
+        return $this->hasMany(Project::class);
+    }
 }
